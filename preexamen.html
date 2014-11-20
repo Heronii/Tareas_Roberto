@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+		
+		<meta http-equiv="Content-type" content="text/html; charset=utf-8">
+		
+		<title>Prueba Examen</title>
+		
+		<style type="text/css" media="screen">
+		
+			.cuadro
+			{		
+				width:50px;
+				height:50px;
+				float:left;
+				margin-top:10px;
+				margin-right:10px;
+			}
+
+			</style>
+	
+		</head>
+		
+		
+		<body>
+	
+		<input type="text" name="some_name" value=" " id="campo">
+		<input type="button" name="some_name" value="click" id="some_name" onclick="myfunction();">
+		<div id="demo"></div>
+	
+		<script type="text/javascript" charset="utf-8">
+			var colores = ["#ff530d", "#570fff","#36ffd2", "#ffe873", "#000", "#79ff03", "#e8ad32", 					"#ff4744", "#6532e8", "#37fcff", "#29ffaf", "#d0e80a", "#ff9317", "#e80a84", "#0b17ff", 					"#42ff06", "#e8af0c", "#ff1f00", "#760ce8", "#0dcaff"];
+	
+			function myfunction()
+			{
+		
+				var	numerousuario = document.getElementById("campo").value;
+				for(i=1; i<= numerousuario; i++){
+				x=Math.floor(Math.random()*colores.length);	
+				$('#demo').append('<div class = "cuadro" style="background:'+colores[x]+'"></div>')
+		
+			}
+		
+		
+				$(".cuadro").mouseenter(function(){
+					$(this).animate({
+						width:"70px",
+						height:"70px",
+						},300)
+				});
+		
+				$(".cuadro").mouseleave(function(){
+					$(this).animate({
+						width:"50px",
+						height:"50px",
+					},300)
+				});
+			};
+	</script>
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN"
+   "http://www.w3.org/TR/html4/strict.dtd">
+
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title>Funciones</title>
+	
+		<script type="text/javascript" charset="utf-8">
+		
+		//	function primera(){
+		
+		//		alert(8+5)	
+			
+		//	};
+		
+	//	Function primera(v1, v2){
+			
+			//alert(v1+v2)
+	//	};
+	
+			function escribe(){
+				
+				document.getElementById("pais").value="Hola Isaac";
+				document.getElementById("pais").focus();
+				
+			};
+				
+			function borrar(){
+
+				document.getElementById("pais").value="";
+					
+
+			};
+			
+			
+			function escribe_pais(){
+			
+				document.getElementById("contienePais").innerHTML=document.getElementById("pais").value
+ 					
+ 					
+ 					
+			};
+				
+		</script>
+		
+		<style type="text/css" media="screen">
+			#contienePais{
+				font-size:100px;
+				text-align:center;
+				
+			}
+		</style>
+	<!-- Date: 2014-09-02 -->
+</head>
+<body>
+
+
+
+					<input type="text" name="pais" value="" id="pais">
+					<input type="button" name="boton" value="Escribe texto" id="boton" onClick="escribe();">
+					<input type="button" name="borrar" value="Borrar" id="Borrar" onClick="borrar();">
+					<input type="button" name="escribePais" value="Escribe País" id="escribe_pais" onClick="escribe_pais();">
+					
+					
+					
+					<div id="contienePais"></div>
+					
+							<script type="text/javascript" charset="utf-8">
+		
+	//	primera(10,5);
+		//	escribe();
+		
+
+		
+		</script>
+					
+					
+</body>
+</html>

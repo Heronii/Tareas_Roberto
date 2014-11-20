@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+
+<html>
+
+	<head>
+	
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+		
+		<meta http-equiv="Content-type" content="text/html; charset=utf-8">
+		
+		<title>Examen Parcial</title>
+		
+		<style type="text/css" media="screen">
+		
+		body{ background: black;}		
+		
+			
+		h2{
+			
+			font-size: 40px;
+			color: Green;
+		}
+			
+		.mes
+			{		
+				width:50px;
+				height:50px;
+				float:left;
+				margin-top:5px;
+				margin-right:5px;
+				background-color: #de9301;
+			}
+			
+		.dia
+			{		
+				width:20px;
+				height:20px;
+				float:left;
+				margin-top:5px;
+				margin-right:5px;
+				background-color: #01c7de;
+			}
+			
+		.clear
+			{
+				clear: both;
+			}
+		
+		
+		</style>
+	
+	</head>
+		
+		
+	<body>
+		<h2> Mes </h2>
+		<div>
+			<div id="mes"></div>
+		</div>
+		
+		
+		
+		<div class="clear"></div>
+			
+	
+		<h2>Día</h2>
+			<div>
+				<div id="dia"></div>
+			</div>
+	
+			
+		<script type="text/javascript" charset="utf-8">
+		
+				
+				
+			var hoy = new Date();
+			var month = hoy.getMonth();
+			//var month = new Date(month);
+			var day = hoy.getDate();
+			//var day = new Date(day);
+			
+			
+			var i= month;
+			var x=day;
+			
+			
+			//alert();
+	
+			
+			$(document).ready(function(){
+					
+				for(i=0; i<=month; i++){
+				
+				$('#mes').append('<div class="mes"></div>')
+
+				
+				
+				};
+			
+			
+				for(x=1; x<=day; x++){
+				
+					$('#dia').append('<div class="dia"></div>')
+
+				
+				
+				};
+			
+			
+			
+					$(".mes").click(function(){
+					$(this).fadeOut(5000);
+					});
+					
+					$(".dia").click(function(){
+					$(this).fadeOut(5000);
+					});
+					
+					
+					
+			
+			
+			
+			//	$("#mes","#dia").click(function(){
+				//s		$(this).fadeOut({
+				//			},5000)
+				//});
+				
+				
+			});			
+			
+		
+				
+				
+							
+				
+			
+		</script>
+		
+		
+	</body>
+	
+	
+</html>
